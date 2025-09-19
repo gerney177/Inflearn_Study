@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/members/new" method="post">
+<!--        action은 new, method는 post / 등록이 되면 "포스트 방식"으로 넘어온다. 이러면 PostMapping으로 간다. -->
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+<!--key : name, value("name") : input_value-->
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>
